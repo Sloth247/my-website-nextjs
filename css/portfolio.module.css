@@ -1,0 +1,143 @@
+.portfolio {
+  padding: 4rem 5%;
+  background-color: #3d405b;
+  color: #fff;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  transform: translateY(-2rem);
+  margin-bottom: -2.5rem;
+  z-index: -3;
+}
+@media screen and (min-width: 50em) {
+  .portfolio {
+    padding: 6rem 5%;
+    margin-bottom: -2rem;
+  }
+}
+
+.img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 26rem;
+  height: 15rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media screen and (min-width: 50em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 62.5em) {
+  .container {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 50em) {
+  .title {
+    margin-bottom: 4rem;
+  }
+}
+.title::before {
+  display: block;
+  content: "";
+  margin-top: -8rem;
+  height: 8rem;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem 2rem 1rem 2rem;
+  line-height: 1.8;
+  border: 3px solid #fff;
+  box-shadow: 10px 10px;
+}
+@media screen and (min-width: 50em) {
+  .item {
+    padding: 3rem 3rem;
+  }
+}
+
+.projecttitle {
+  font-weight: 700;
+  font-size: 1.1rem;
+  position: relative;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 50em) {
+  .projecttitle {
+    font-size: 1.4rem;
+  }
+}
+.projecttitle span {
+  margin-right: 0.5rem;
+}
+.projecttitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 15px;
+  width: 0;
+  opacity: 0.7;
+  background: #f2cc8f;
+  background: #f4978e;
+  transition: none;
+}
+.projecttitle:focus, .projecttitle:hover {
+  outline: none;
+}
+.projecttitle:focus:after, .projecttitle:hover:after {
+  width: 100%;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+.description {
+  align-self: start;
+}
+
+.githubicon {
+  margin-left: 1rem;
+}
+
+.fem-link {
+  position: relative;
+  font-weight: bold;
+  -webkit-text-decoration: underline solid 2px #fff;
+          text-decoration: underline solid 2px #fff;
+}
+
+.keyTech--bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=portfolio.module.css.map */

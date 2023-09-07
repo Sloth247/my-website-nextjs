@@ -1,0 +1,3 @@
+.icon{z-index:30}@media screen and (min-width: 50em){.icon{display:none}}.icon:focus{outline:dotted 5px #ffd60a;outline-offset:1rem}.icon span{position:relative}.icon span,.icon span::before,.icon span::after{width:1.5rem;height:3px;background-color:#000;display:block;transition:all .2s ease}.icon span::before{position:absolute;content:"";top:-10px;left:0}.icon span::after{position:absolute;content:"";top:10px;left:0}.icon.close span::before{top:0;transform:rotate(45deg);background-color:#fff}.icon.close span{background-color:rgba(0,0,0,0)}.icon.close span::after{top:0;transform:rotate(-45deg);background-color:#fff}
+
+/*# sourceMappingURL=hamburger.module.min.css.map */

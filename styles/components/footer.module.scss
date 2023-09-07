@@ -1,0 +1,16 @@
+@use '../sass/mixins.scss';
+@use '../sass/variables.scss';
+
+.footer {
+  background-color: variables.$color-gray-bg;
+  padding: 1rem 5% 1rem 5%;
+  @include mixins.mq(medium) {
+    padding: 1rem 5rem 2rem 5rem;
+  }
+}
+
+.copyrights {
+  text-align: center;
+  font-weight: variables.$font-weight-bold;
+  margin-top: 1rem;
+}

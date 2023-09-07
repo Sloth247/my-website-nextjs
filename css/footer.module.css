@@ -1,0 +1,17 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem 5% 1rem 5%;
+}
+@media screen and (min-width: 50em) {
+  .footer {
+    padding: 1rem 5rem 2rem 5rem;
+  }
+}
+
+.copyrights {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=footer.module.css.map */
